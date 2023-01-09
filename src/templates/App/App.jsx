@@ -2,8 +2,8 @@ import * as Style from "./Style";
 
 function App() {
   return (
-    <div className="App">
-      <Style.Wrapper background="blue">
+    <div>
+      <Style.Wrapper>
         <h1>hello</h1>
       </Style.Wrapper>
     </div>
