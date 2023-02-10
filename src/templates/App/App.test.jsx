@@ -3,6 +3,12 @@ import App from "./App";
 
 test("renders learn react link", () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+
+  const headingContainer = screen.getByRole("heading", {
+    name: "hello",
+  }).parentElement;
+  expect(headingContainer).toHaveStyle({
+    background: "blue",
+  });
+  expect(headingContainer).toHaveStyleRule("background", "blue");
 });

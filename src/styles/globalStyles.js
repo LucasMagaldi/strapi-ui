@@ -8,11 +8,11 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body{
-    ${() => css`
+    /*${() => css`
       background: ${theme.colors.mainBg};
-    `}
+    `}*/
   }
-  
+
 `;
 
 export default GlobalStyles;
